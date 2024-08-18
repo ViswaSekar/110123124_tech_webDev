@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #191419;
+}
+
+#nav_bar{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  
+}
+
+#brand_name{
+  font-family: "Platypi", serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  height: 65px;
+  width: 200px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  cursor: grab;
+}
+
+#controls{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin-right: 10px;
+}
+
+li{
+  
+  cursor: pointer;
+  margin: 0 30px;
+  font-size: 17px;
+  color: white;
+}
+
+li:hover{
+  color: #FFC107;
+}
+
+#home{
+  padding: 70px 0;
+  background-color: #191419;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+
+#features_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom,#1db954,#444444);
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+#title{
+  color:#fdfaff;
+  height: 20px;
+  width: 100px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cols{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 200px;
+  width: 100%;
+  height: 400px;
+  flex-direction: row;
+}
+
+#col1 , #col2 , #col3{
+  overflow: hidden;
+  position: relative;
+  background-color: #191419;
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+#pricing{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top,#1db954,#444444);
+}
+
+#icon1 , #icon2 , #icon3{
+  background-color: #191419;
+  height: 400px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#content1 , #content2 , #content3{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(-10%);
+  height: 400px;
+  width: 300px;
+  background-color: #1db954;
+  transition: transform 0.7s ease-in-out;
+}
+
+p{
+  font-size: 22px;
+  text-align: center;
+}
+
+img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+}
+
+#col1:hover #content1{
+  transform: translateY(-90%);
+}
+
+#col2:hover #content2{
+  transform: translateY(-90%);
+}
+
+#col3:hover #content3{
+  transform: translateY(-90%);
+}
+
+
+
+#reviews{
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 608px;
+  width: 100%;
+  padding:0 30px;
+  color: white;
+  line-height: 1.7;
+  background:linear-gradient(to bottom,#191419,#1db954);
+}
+
+#headLine{
+  width: 100%;
+  height: 100px;
+  background-color: #191419;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #1db954;
+}
+
+#review{
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #191419;
+}
+
+#top_review{
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+}
+
+#star{
+  margin-left: 10px;
+  display: flex;
+}
+
+#star_img{
+  height: 20px;
+  width: 20px;
+}
+
+h1{
+  margin: 0;
+  color: #fdfaff;
+}
+#review_head{
+  height: 40px;
+}
+
+#pricing_head{
+  height: 250px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfaff;
+}
+
+#prices{
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 100px;
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  background-color: #191419;
+  opacity: 0.95;
+  border-radius: 20px;
+}
+
+#low:hover{
+  opacity: 1;
+  border: #1db954 2px solid;
+}
+
+#medium:hover{
+  opacity: 1;
+  border: #1db954 2px solid;
+}
+
+
+#high:hover{
+  opacity: 1;
+  border: #FFC107 2px solid;
+}
+
+#price_title{
+  color: #fdfaff;
+  height: 100px;
+  width: 100%;
+  font-size: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#images{
+  height: 50px;
+  width: 50px;
+}
+
+#f{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sentence_div{
+  color: #fdfaff;
+  font-size: 20px;
+}
+
+
+#value{
+  height: 25px;
+  width: 15%;
+  position: relative;
+  left: 1060px;
+  bottom: 360px;
+  display: flex;
+  background-color: #FFC107;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacts{
+  margin-top: 50px;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  transform: translateY(100%);
+  transition: 0.5s ease-in-out;
+}
+
+#lower_contacts{
+  height: 50px;
+  background-color: #fdfaff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#newsletter{
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  background-color: #191419;
+}
+
+input{
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  height: 50px;
+  width: 50%;
+  border-radius: 7px;
+  border-style: none;
+  outline: none;
+  text-align: center;
+}
+
+button{
+  height: 50px;
+  width: 35%;
+  border-radius: 7px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition:background-color  0.2s ease-in-out;
+}
+
+button:hover{
+  background-color: #FFC107
+}
+
+a{
+  color: #191419;
+  outline: none;
+  text-decoration: none;
+}
+
+#upper_contacts{
+  display: flex;
+}
+
+#contact{
+  background-color: #FFC107;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
